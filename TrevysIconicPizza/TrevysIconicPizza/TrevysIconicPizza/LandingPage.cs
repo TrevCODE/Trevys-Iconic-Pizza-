@@ -16,5 +16,18 @@ namespace TrevysIconicPizza
         {
             InitializeComponent();
         }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            bool alreadyOpen = false;
+            var login = new LoginPage();
+            login.Show();
+            alreadyOpen = true;
+
+            if(alreadyOpen)
+            {
+                loginButton.Enabled = false;
+            }
+        }
     }
 }
