@@ -1,4 +1,6 @@
-﻿namespace TrevysIconicPizza
+﻿using System.Windows.Forms;
+
+namespace TrevysIconicPizza
 {
     partial class LoginPage
     {
@@ -126,6 +128,7 @@
             this.Controls.Add(this.UserNameTextBox);
             this.Name = "LoginPage";
             this.Text = "LoginPage";
+            this.Load += new System.EventHandler(this.LoginPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
