@@ -12,12 +12,9 @@ namespace TrevysIconicPizza
 {
     public partial class LoginPage : Form
     {
-        public  bool IsOpen { get; private set; }
         public LoginPage()
         {
             InitializeComponent();
-            IsOpen = true;
-            this.FormClosed += LoginPage_FormClosed;
         }
 
         private void ShowPasswordCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -35,10 +32,6 @@ namespace TrevysIconicPizza
         {
 
         }
-        //Checking if Login form is closed 
-        private void LoginPage_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            IsOpen = false;
-        }
+
     }
 }

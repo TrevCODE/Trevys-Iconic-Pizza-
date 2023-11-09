@@ -64,6 +64,7 @@
             this.createAccountButton.TabIndex = 2;
             this.createAccountButton.Text = "Create Account";
             this.createAccountButton.UseVisualStyleBackColor = true;
+            this.createAccountButton.Click += new System.EventHandler(this.createAccountButton_Click);
             // 
             // continueAsGuestButton
             // 

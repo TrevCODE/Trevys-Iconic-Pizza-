@@ -13,23 +13,24 @@ namespace TrevysIconicPizza
     public partial class LandingPage : Form
     {
         private LoginPage loginPage;
+        private CreateAccountPage createAccountPage;
         public LandingPage()
         {
             InitializeComponent();
             
         }
 
-        private void loginButton_Click(object sender, EventArgs e)
+        public void loginButton_Click(object sender, EventArgs e)
         {loginPage = new LoginPage();
-            if (!loginPage.IsOpen)
-            {
-                
-                loginButton.Enabled = false;
-            } else
-            {
-                loginButton.Enabled = true;
-            }
+            loginPage.Show();
+            //this.Visible = false;
         }
 
+        private void createAccountButton_Click(object sender, EventArgs e)
+        {
+            createAccountPage = new CreateAccountPage();
+            createAccountPage.Show();
+            this.Visible = false;
+        }
     }
 }
