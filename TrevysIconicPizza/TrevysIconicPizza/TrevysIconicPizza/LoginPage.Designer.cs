@@ -57,12 +57,13 @@ namespace TrevysIconicPizza
             // 
             // LoginButton
             // 
+            this.LoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.LoginButton.Location = new System.Drawing.Point(462, 327);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(89, 35);
             this.LoginButton.TabIndex = 2;
             this.LoginButton.Text = "Login";
-            this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.UseVisualStyleBackColor = false;
             // 
             // WelcomeLabel
             // 

@@ -40,5 +40,29 @@ namespace TrevysIconicPizza
                 reEnterTextBox.UseSystemPasswordChar = true;
             }
         }
+        private bool verifyFirstName()
+        {
+            bool result = true;
+            if(!System.Text.RegularExpressions.Regex.IsMatch(firstNameTextBox.Text, "[^a-zA-Z]"))
+            {
+                MessageBox.Show("Name must be in letters");
+                result = false;
+            }
+            return result;
+        }
+        private bool verifyLastName()
+        {
+            bool result = true;
+            if (!System.Text.RegularExpressions.Regex.IsMatch(lastNameTextBox.Text, "[^a-zA-Z]"))
+            {
+                MessageBox.Show("Name must be in letters");
+                result = false;
+            }
+            return result;
+        }
+        private bool verifyUsername()
+        {
+            bool result = true;
+        }
     }
 }

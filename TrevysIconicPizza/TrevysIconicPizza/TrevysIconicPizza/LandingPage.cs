@@ -23,7 +23,7 @@ namespace TrevysIconicPizza
         public void loginButton_Click(object sender, EventArgs e)
         {loginPage = new LoginPage();
             loginPage.Show();
-            //this.Visible = false;
+            this.Visible = false;
         }
 
         private void createAccountButton_Click(object sender, EventArgs e)

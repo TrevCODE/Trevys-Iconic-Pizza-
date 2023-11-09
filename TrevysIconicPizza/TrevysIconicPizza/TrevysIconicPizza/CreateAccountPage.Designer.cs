@@ -138,12 +138,13 @@
             // 
             // createAcountButton
             // 
+            this.createAcountButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.createAcountButton.Location = new System.Drawing.Point(222, 353);
             this.createAcountButton.Name = "createAcountButton";
             this.createAcountButton.Size = new System.Drawing.Size(94, 38);
             this.createAcountButton.TabIndex = 10;
             this.createAcountButton.Text = "Create Account";
-            this.createAcountButton.UseVisualStyleBackColor = true;
+            this.createAcountButton.UseVisualStyleBackColor = false;
             // 
             // showPasswordCheckBox
             // 
