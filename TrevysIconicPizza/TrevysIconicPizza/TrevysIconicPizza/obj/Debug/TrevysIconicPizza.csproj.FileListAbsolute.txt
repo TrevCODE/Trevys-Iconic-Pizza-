@@ -1,0 +1,12 @@
+C:\Users\cevel\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\bin\Debug\TrevysIconicPizza.exe.config
+C:\Users\cevel\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\bin\Debug\TrevysIconicPizza.exe
+C:\Users\cevel\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\bin\Debug\TrevysIconicPizza.pdb
+C:\Users\cevel\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.csproj.AssemblyReference.cache
+C:\Users\cevel\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.LandingPage.resources
+C:\Users\cevel\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.MenuPage.resources
+C:\Users\cevel\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.PizzaPage.resources
+C:\Users\cevel\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.Properties.Resources.resources
+C:\Users\cevel\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.csproj.GenerateResource.cache
+C:\Users\cevel\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.csproj.CoreCompileInputs.cache
+C:\Users\cevel\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.exe
+C:\Users\cevel\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.pdb
