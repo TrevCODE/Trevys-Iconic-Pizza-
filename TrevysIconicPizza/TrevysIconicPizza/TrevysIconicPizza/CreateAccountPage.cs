@@ -60,9 +60,28 @@ namespace TrevysIconicPizza
             }
             return result;
         }
-        private bool verifyUsername()
+        //private bool verifyUsername()
+        //{
+        //    bool result = true;
+        //}
+        private bool verifyPassword()
         {
             bool result = true;
+            if (!passwordTextBox.Text.Length.Equals(reEnterTextBox.Text)) {
+                result = false;
+            }
+            return result;
         }
+        private bool verifyCard()
+        {
+            bool result = true;
+            if (!System.Text.RegularExpressions.Regex.IsMatch(cardTextBox.Text, "/^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\\d{3})\\d{11})$/"))
+            {
+                result = false;
+            }
+            return result; 
+        }
+
+
     }
 }

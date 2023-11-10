@@ -48,50 +48,55 @@
             // firstNameLabel
             // 
             this.firstNameLabel.AutoSize = true;
+            this.firstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstNameLabel.Location = new System.Drawing.Point(102, 40);
             this.firstNameLabel.Margin = new System.Windows.Forms.Padding(3, 20, 3, 20);
             this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(57, 13);
+            this.firstNameLabel.Size = new System.Drawing.Size(67, 13);
             this.firstNameLabel.TabIndex = 0;
             this.firstNameLabel.Text = "First Name";
             // 
             // lastNameLabel
             // 
             this.lastNameLabel.AutoSize = true;
+            this.lastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastNameLabel.Location = new System.Drawing.Point(102, 93);
             this.lastNameLabel.Margin = new System.Windows.Forms.Padding(1, 20, 3, 20);
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(58, 13);
+            this.lastNameLabel.Size = new System.Drawing.Size(67, 13);
             this.lastNameLabel.TabIndex = 1;
             this.lastNameLabel.Text = "Last Name";
             // 
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.Location = new System.Drawing.Point(102, 146);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(3, 20, 3, 20);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(55, 13);
+            this.usernameLabel.Size = new System.Drawing.Size(63, 13);
             this.usernameLabel.TabIndex = 2;
             this.usernameLabel.Text = "Username";
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
+            this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLabel.Location = new System.Drawing.Point(102, 199);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(3, 20, 3, 20);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(53, 13);
+            this.passwordLabel.Size = new System.Drawing.Size(61, 13);
             this.passwordLabel.TabIndex = 3;
             this.passwordLabel.Text = "Password";
             // 
             // cardLabel
             // 
             this.cardLabel.AutoSize = true;
+            this.cardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cardLabel.Location = new System.Drawing.Point(102, 305);
             this.cardLabel.Margin = new System.Windows.Forms.Padding(3, 20, 3, 20);
             this.cardLabel.Name = "cardLabel";
-            this.cardLabel.Size = new System.Drawing.Size(29, 13);
+            this.cardLabel.Size = new System.Drawing.Size(33, 13);
             this.cardLabel.TabIndex = 4;
             this.cardLabel.Text = "Card";
             // 
@@ -138,10 +143,11 @@
             // 
             // createAcountButton
             // 
-            this.createAcountButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.createAcountButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
+            this.createAcountButton.ForeColor = System.Drawing.Color.White;
             this.createAcountButton.Location = new System.Drawing.Point(222, 353);
             this.createAcountButton.Name = "createAcountButton";
-            this.createAcountButton.Size = new System.Drawing.Size(94, 38);
+            this.createAcountButton.Size = new System.Drawing.Size(145, 50);
             this.createAcountButton.TabIndex = 10;
             this.createAcountButton.Text = "Create Account";
             this.createAcountButton.UseVisualStyleBackColor = false;
@@ -149,10 +155,11 @@
             // showPasswordCheckBox
             // 
             this.showPasswordCheckBox.AutoSize = true;
+            this.showPasswordCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showPasswordCheckBox.Location = new System.Drawing.Point(412, 202);
             this.showPasswordCheckBox.Margin = new System.Windows.Forms.Padding(10, 20, 3, 20);
             this.showPasswordCheckBox.Name = "showPasswordCheckBox";
-            this.showPasswordCheckBox.Size = new System.Drawing.Size(102, 17);
+            this.showPasswordCheckBox.Size = new System.Drawing.Size(115, 17);
             this.showPasswordCheckBox.TabIndex = 11;
             this.showPasswordCheckBox.Text = "Show Password";
             this.showPasswordCheckBox.UseVisualStyleBackColor = true;
@@ -161,10 +168,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(102, 252);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 13);
+            this.label1.Size = new System.Drawing.Size(114, 13);
             this.label1.TabIndex = 12;
             this.label1.Text = "Re-enter Password";
             // 
@@ -180,10 +188,11 @@
             // reEnterPasswordCheckBox
             // 
             this.reEnterPasswordCheckBox.AutoSize = true;
+            this.reEnterPasswordCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reEnterPasswordCheckBox.Location = new System.Drawing.Point(412, 248);
             this.reEnterPasswordCheckBox.Margin = new System.Windows.Forms.Padding(10, 20, 3, 20);
             this.reEnterPasswordCheckBox.Name = "reEnterPasswordCheckBox";
-            this.reEnterPasswordCheckBox.Size = new System.Drawing.Size(102, 17);
+            this.reEnterPasswordCheckBox.Size = new System.Drawing.Size(115, 17);
             this.reEnterPasswordCheckBox.TabIndex = 14;
             this.reEnterPasswordCheckBox.Text = "Show Password";
             this.reEnterPasswordCheckBox.UseVisualStyleBackColor = true;
@@ -193,6 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(180)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(563, 450);
             this.Controls.Add(this.reEnterPasswordCheckBox);
             this.Controls.Add(this.reEnterTextBox);
