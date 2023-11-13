@@ -24,6 +24,9 @@ namespace TrevysIconicPizza
         {
             loginPage = new LoginPage();
             loginPage.Show();
+            //this.loginPage.Visible = true;
+            this.Hide();
+            this.Dispose();
             //this.Visible = false; //Does not work well
             
         }
@@ -32,6 +35,8 @@ namespace TrevysIconicPizza
         {
             createAccountPage = new CreateAccountPage();
             createAccountPage.Show();
+            this.Hide();
+            this.Dispose();
            // this.Visible = false; // Does not work well
         }
     }

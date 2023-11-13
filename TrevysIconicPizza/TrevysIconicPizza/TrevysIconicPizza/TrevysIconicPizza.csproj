@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartPage.Designer.cs">
+      <DependentUpon>CartPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateAccountPage.cs">
       <SubType>Form</SubType>
     </Compile>
