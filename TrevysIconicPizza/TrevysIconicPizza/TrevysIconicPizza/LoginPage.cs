@@ -16,5 +16,22 @@ namespace TrevysIconicPizza
         {
             InitializeComponent();
         }
+
+        private void ShowPasswordCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ShowPasswordCheckBox.Checked)
+            {
+                PasswordTextBox.UseSystemPasswordChar = false;
+            } else
+            {
+                PasswordTextBox.UseSystemPasswordChar= true;
+            }
+        }
+
+        private void LoginPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -46,33 +46,38 @@
             // 
             // loginButton
             // 
+            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.Location = new System.Drawing.Point(27, 304);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(145, 50);
             this.loginButton.TabIndex = 1;
             this.loginButton.Text = "Login";
-            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.UseVisualStyleBackColor = false;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // createAccountButton
             // 
+            this.createAccountButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
             this.createAccountButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createAccountButton.Location = new System.Drawing.Point(206, 304);
             this.createAccountButton.Name = "createAccountButton";
             this.createAccountButton.Size = new System.Drawing.Size(145, 50);
             this.createAccountButton.TabIndex = 2;
             this.createAccountButton.Text = "Create Account";
-            this.createAccountButton.UseVisualStyleBackColor = true;
+            this.createAccountButton.UseVisualStyleBackColor = false;
+            this.createAccountButton.Click += new System.EventHandler(this.createAccountButton_Click);
             // 
             // continueAsGuestButton
             // 
+            this.continueAsGuestButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
             this.continueAsGuestButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.continueAsGuestButton.Location = new System.Drawing.Point(385, 304);
             this.continueAsGuestButton.Name = "continueAsGuestButton";
             this.continueAsGuestButton.Size = new System.Drawing.Size(145, 50);
             this.continueAsGuestButton.TabIndex = 3;
             this.continueAsGuestButton.Text = "Continue As Guest";
-            this.continueAsGuestButton.UseVisualStyleBackColor = true;
+            this.continueAsGuestButton.UseVisualStyleBackColor = false;
             // 
             // copyrightLabel
             // 
@@ -83,7 +88,7 @@
             this.copyrightLabel.Text = "© 2023 Trevy\'s Iconic Pizza";
             this.copyrightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // LandingPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -93,7 +98,7 @@
             this.Controls.Add(this.createAccountButton);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.logoPictureBox);
-            this.Name = "Form1";
+            this.Name = "LandingPage";
             this.Text = "Trevy\'s Iconic Pizza";
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
             this.ResumeLayout(false);
