@@ -22,22 +22,35 @@ namespace TrevysIconicPizza
 
         public void loginButton_Click(object sender, EventArgs e)
         {
-            loginPage = new LoginPage();
+            // Assuming loginPage is an instance of LoginPage
+            LoginPage loginPage = new LoginPage();
+
+            // Handle the FormClosed event
+            loginPage.FormClosed += (s, args) =>
+            {
+                // Re-enable the loginButton when the LoginPage is closed
+                loginButton.Enabled = true;
+            };
+
             loginPage.Show();
-            //this.loginPage.Visible = true;
-            this.Hide();
-            this.Dispose();
-            //this.Visible = false; //Does not work well
-            
+            loginButton.Enabled = false;
+
         }
 
         private void createAccountButton_Click(object sender, EventArgs e)
         {
-            createAccountPage = new CreateAccountPage();
+            // Assuming loginPage is an instance of LoginPage
+            CreateAccountPage createAccountPage = new CreateAccountPage();
+
+            // Handle the FormClosed event
+            createAccountPage.FormClosed += (s, args) =>
+            {
+                // Re-enable the loginButton when the LoginPage is closed
+                createAccountButton.Enabled = true;
+            };
+
             createAccountPage.Show();
-            this.Hide();
-            this.Dispose();
-           // this.Visible = false; // Does not work well
+            createAccountButton.Enabled = false;
         }
     }
 }
