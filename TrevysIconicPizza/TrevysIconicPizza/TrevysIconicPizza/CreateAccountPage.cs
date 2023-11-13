@@ -12,6 +12,8 @@ namespace TrevysIconicPizza
 {
     public partial class CreateAccountPage : Form
     {
+        //Saves any error message 
+        List<string> invalidResult = new List<string>();
         public CreateAccountPage()
         {
             InitializeComponent();
@@ -45,7 +47,7 @@ namespace TrevysIconicPizza
             bool result = true;
             if(!System.Text.RegularExpressions.Regex.IsMatch(firstNameTextBox.Text, "[^a-zA-Z]"))
             {
-                MessageBox.Show("Name must be in letters");
+                invalidResult.Add("Name must be in letters\n");
                 result = false;
             }
             return result;
@@ -55,7 +57,7 @@ namespace TrevysIconicPizza
             bool result = true;
             if (!System.Text.RegularExpressions.Regex.IsMatch(lastNameTextBox.Text, "[^a-zA-Z]"))
             {
-                MessageBox.Show("Name must be in letters");
+                invalidResult.Add("Name must be in letters\n");
                 result = false;
             }
             return result;
@@ -67,7 +69,8 @@ namespace TrevysIconicPizza
         private bool verifyPassword()
         {
             bool result = true;
-            if (!passwordTextBox.Text.Length.Equals(reEnterTextBox.Text)) {
+            if (!passwordTextBox.Text.Equals(reEnterTextBox.Text)) {
+                invalidResult.Add("Password does not match\n");
                 result = false;
             }
             return result;
@@ -77,11 +80,23 @@ namespace TrevysIconicPizza
             bool result = true;
             if (!System.Text.RegularExpressions.Regex.IsMatch(cardTextBox.Text, "/^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\\d{3})\\d{11})$/"))
             {
+                invalidResult.Add("Invalid Card input\n");
                 result = false;
             }
             return result; 
         }
 
-
+        private void createAcountButton_Click(object sender, EventArgs e)
+        {
+            verifyCard();
+            verifyFirstName();
+            verifyLastName();
+            verifyPassword();
+            if(invalidResult.Count != 0)
+            {
+                MessageBox.Show(invalidResult.ToString());
+               
+            }
+        }
     }
 }

@@ -72,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CartPage.resx">
+      <DependentUpon>CartPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateAccountPage.resx">
       <DependentUpon>CreateAccountPage.cs</DependentUpon>
     </EmbeddedResource>

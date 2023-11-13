@@ -23,3 +23,4 @@ C:\Users\Trevor\Documents\GitHub\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIc
 C:\Users\Trevor\Documents\GitHub\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.csproj.CoreCompileInputs.cache
 C:\Users\Trevor\Documents\GitHub\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.exe
 C:\Users\Trevor\Documents\GitHub\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.pdb
+C:\Users\2149315\Documents\GitHub\Trevys-Iconic-Pizza-\TrevysIconicPizza\TrevysIconicPizza\TrevysIconicPizza\obj\Debug\TrevysIconicPizza.CartPage.resources

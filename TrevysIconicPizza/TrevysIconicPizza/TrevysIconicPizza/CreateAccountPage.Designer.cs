@@ -156,6 +156,7 @@
             this.createAcountButton.TabIndex = 10;
             this.createAcountButton.Text = "Create Account";
             this.createAcountButton.UseVisualStyleBackColor = false;
+            this.createAcountButton.Click += new System.EventHandler(this.createAcountButton_Click);
             // 
             // showPasswordCheckBox
             // 
@@ -217,7 +218,7 @@
             this.loginPanel.Controls.Add(this.lastNameLabel);
             this.loginPanel.Controls.Add(this.firstNameLabel);
             this.loginPanel.Location = new System.Drawing.Point(23, 18);
-            this.loginPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loginPanel.Margin = new System.Windows.Forms.Padding(2);
             this.loginPanel.Name = "loginPanel";
             this.loginPanel.Size = new System.Drawing.Size(520, 433);
             this.loginPanel.TabIndex = 15;
