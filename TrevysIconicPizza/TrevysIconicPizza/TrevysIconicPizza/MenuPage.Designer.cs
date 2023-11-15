@@ -57,6 +57,7 @@
             this.drinkButton.TabIndex = 1;
             this.drinkButton.Text = "DRINKS";
             this.drinkButton.UseVisualStyleBackColor = false;
+            this.drinkButton.Click += new System.EventHandler(this.drinkButton_Click);
             // 
             // creditLabel
             // 

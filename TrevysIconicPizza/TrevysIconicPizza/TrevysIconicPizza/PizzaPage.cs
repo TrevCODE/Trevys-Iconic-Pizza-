@@ -18,7 +18,7 @@ namespace TrevysIconicPizza
             InitializeComponent();
 
            pizzaPanel.AutoScrollMinSize = new Size(0, 880);
-            this.Size = new Size(Width, Height + 10);
+           this.Size = new Size(Width, Height + 10);
         }
 
         private void crustListBox_SelectedIndexChanged(object sender, EventArgs e)

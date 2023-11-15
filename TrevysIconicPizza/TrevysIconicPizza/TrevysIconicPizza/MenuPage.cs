@@ -32,5 +32,21 @@ namespace TrevysIconicPizza
             pizzaPage.Show();
             pizzaButton.Enabled = false;
         }
+
+        private void drinkButton_Click(object sender, EventArgs e)
+        {
+            // Assuming loginPage is an instance of LoginPage
+            DrinkPage drinkPage = new DrinkPage();
+
+            // Handle the FormClosed event
+            drinkPage.FormClosed += (s, args) =>
+            {
+                // Re-enable the loginButton when the LoginPage is closed
+                drinkButton.Enabled = true;
+            };
+
+            drinkPage.Show();
+            drinkButton.Enabled = false;
+        }
     }
 }

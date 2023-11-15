@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DrinkPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrinkPage.Designer.cs">
+      <DependentUpon>DrinkPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DrinkPage.resx">
+      <DependentUpon>DrinkPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPage.resx">
       <DependentUpon>MenuPage.cs</DependentUpon>
     </EmbeddedResource>
