@@ -12,26 +12,45 @@ namespace TrevysIconicPizza
 {
     public partial class LandingPage : Form
     {
-        LoginPage loginPage = new LoginPage();
+        private  LoginPage loginPage;
+        private CreateAccountPage createAccountPage;
         public LandingPage()
         {
             InitializeComponent();
+            
         }
 
-        private void loginButton_Click(object sender, EventArgs e)
+        public void loginButton_Click(object sender, EventArgs e)
         {
             // Assuming loginPage is an instance of LoginPage
-            PizzaPage pizza = new PizzaPage();
+            LoginPage loginPage = new LoginPage();
 
             // Handle the FormClosed event
-            pizza.FormClosed += (s, args) =>
+            loginPage.FormClosed += (s, args) =>
             {
                 // Re-enable the loginButton when the LoginPage is closed
                 loginButton.Enabled = true;
             };
 
-            pizza.Show();
+            loginPage.Show();
             loginButton.Enabled = false;
+
+        }
+
+        private void createAccountButton_Click(object sender, EventArgs e)
+        {
+            // Assuming loginPage is an instance of LoginPage
+            CreateAccountPage createAccountPage = new CreateAccountPage();
+
+            // Handle the FormClosed event
+            createAccountPage.FormClosed += (s, args) =>
+            {
+                // Re-enable the loginButton when the LoginPage is closed
+                createAccountButton.Enabled = true;
+            };
+
+            createAccountPage.Show();
+            createAccountButton.Enabled = false;
         }
     }
 }
