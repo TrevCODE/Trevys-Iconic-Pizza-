@@ -45,23 +45,25 @@ namespace TrevysIconicPizza
         private bool verifyFirstName()
         {
             bool result = true;
-            if(!System.Text.RegularExpressions.Regex.IsMatch(firstNameTextBox.Text, "[^a-zA-Z]"))
+            if (System.Text.RegularExpressions.Regex.IsMatch(firstNameTextBox.Text, "[^a-zA-Z]"))
             {
-                invalidResult.Add("Name must be in letters\n");
+                invalidResult.Add("First name must contain only letters.\n");
                 result = false;
             }
             return result;
         }
+
         private bool verifyLastName()
         {
             bool result = true;
-            if (!System.Text.RegularExpressions.Regex.IsMatch(lastNameTextBox.Text, "[^a-zA-Z]"))
+            if (System.Text.RegularExpressions.Regex.IsMatch(lastNameTextBox.Text, "[^a-zA-Z]"))
             {
-                invalidResult.Add("Name must be in letters\n");
+                invalidResult.Add("Last name must contain only letters.\n");
                 result = false;
             }
             return result;
         }
+
         //private bool verifyUsername()
         //{
         //    bool result = true;
@@ -72,6 +74,10 @@ namespace TrevysIconicPizza
             if (!passwordTextBox.Text.Equals(reEnterTextBox.Text)) {
                 invalidResult.Add("Password does not match\n");
                 result = false;
+            }
+            if(passwordTextBox.Text.Length < 8)
+            {
+                invalidResult.Add("Password must be eight characters or longer");
             }
             return result;
         }
@@ -88,14 +94,26 @@ namespace TrevysIconicPizza
 
         private void createAcountButton_Click(object sender, EventArgs e)
         {
+            string text = "";
+
             verifyCard();
             verifyFirstName();
             verifyLastName();
             verifyPassword();
-            if(invalidResult.Count != 0)
+
+            if (invalidResult.Count != 0)
             {
-                MessageBox.Show(invalidResult.ToString());
-               
+                foreach (var result in invalidResult)
+                {
+                    text += result;
+                }
+
+                MessageBox.Show(text, "Validation Errors", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Clear text after loop
+                text = "";
+
+                // Clear the list of invalid results after displaying them
+                invalidResult.Clear();
             }
         }
     }

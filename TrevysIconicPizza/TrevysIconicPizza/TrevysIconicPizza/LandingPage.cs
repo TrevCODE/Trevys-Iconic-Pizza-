@@ -12,6 +12,7 @@ namespace TrevysIconicPizza
 {
     public partial class LandingPage : Form
     {
+        private CartPage cartPage;
         private  LoginPage loginPage;
         private CreateAccountPage createAccountPage;
         public LandingPage()
@@ -51,6 +52,13 @@ namespace TrevysIconicPizza
 
             createAccountPage.Show();
             createAccountButton.Enabled = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CartPage cartPage = new CartPage();
+            cartPage.Show();
+
         }
     }
 }

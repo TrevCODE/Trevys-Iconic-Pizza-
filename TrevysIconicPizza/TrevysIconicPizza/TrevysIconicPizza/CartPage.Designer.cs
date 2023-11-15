@@ -29,16 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CartPage));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.cartPanel = new System.Windows.Forms.Panel();
             this.copyrightLabel = new System.Windows.Forms.Label();
+            this.cartListBox = new System.Windows.Forms.ListBox();
+            this.removeButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cartPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // cartPanel
             // 
-            this.panel1.Location = new System.Drawing.Point(28, 23);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(503, 315);
-            this.panel1.TabIndex = 0;
+            this.cartPanel.Controls.Add(this.button1);
+            this.cartPanel.Controls.Add(this.removeButton);
+            this.cartPanel.Controls.Add(this.cartListBox);
+            this.cartPanel.Location = new System.Drawing.Point(28, 23);
+            this.cartPanel.Name = "cartPanel";
+            this.cartPanel.Size = new System.Drawing.Size(503, 315);
+            this.cartPanel.TabIndex = 0;
             // 
             // copyrightLabel
             // 
@@ -50,6 +57,37 @@
             this.copyrightLabel.Text = "© 2023 Trevy\'s Iconic Pizza";
             this.copyrightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // cartListBox
+            // 
+            this.cartListBox.FormattingEnabled = true;
+            this.cartListBox.Location = new System.Drawing.Point(4, 4);
+            this.cartListBox.Name = "cartListBox";
+            this.cartListBox.ScrollAlwaysVisible = true;
+            this.cartListBox.Size = new System.Drawing.Size(317, 303);
+            this.cartListBox.TabIndex = 0;
+            // 
+            // removeButton
+            // 
+            this.removeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
+            this.removeButton.ForeColor = System.Drawing.Color.White;
+            this.removeButton.Location = new System.Drawing.Point(355, 257);
+            this.removeButton.Name = "removeButton";
+            this.removeButton.Size = new System.Drawing.Size(145, 50);
+            this.removeButton.TabIndex = 1;
+            this.removeButton.Text = "Remove";
+            this.removeButton.UseVisualStyleBackColor = false;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(389, 149);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // CartPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -58,16 +96,20 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(563, 402);
             this.Controls.Add(this.copyrightLabel);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.cartPanel);
             this.Name = "CartPage";
             this.Text = "CartPage";
+            this.cartPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel cartPanel;
         private System.Windows.Forms.Label copyrightLabel;
+        private System.Windows.Forms.Button removeButton;
+        private System.Windows.Forms.ListBox cartListBox;
+        private System.Windows.Forms.Button button1;
     }
 }
