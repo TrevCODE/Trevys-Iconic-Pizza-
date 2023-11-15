@@ -44,6 +44,7 @@
             this.pizzaButton.TabIndex = 0;
             this.pizzaButton.Text = "PIZZA";
             this.pizzaButton.UseVisualStyleBackColor = false;
+            this.pizzaButton.Click += new System.EventHandler(this.pizzaButton_Click);
             // 
             // drinkButton
             // 
