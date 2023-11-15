@@ -21,16 +21,16 @@ namespace TrevysIconicPizza
         private void loginButton_Click(object sender, EventArgs e)
         {
             // Assuming loginPage is an instance of LoginPage
-            LoginPage loginPage = new LoginPage();
+            PizzaPage pizza = new PizzaPage();
 
             // Handle the FormClosed event
-            loginPage.FormClosed += (s, args) =>
+            pizza.FormClosed += (s, args) =>
             {
                 // Re-enable the loginButton when the LoginPage is closed
                 loginButton.Enabled = true;
             };
 
-            loginPage.Show();
+            pizza.Show();
             loginButton.Enabled = false;
         }
     }
