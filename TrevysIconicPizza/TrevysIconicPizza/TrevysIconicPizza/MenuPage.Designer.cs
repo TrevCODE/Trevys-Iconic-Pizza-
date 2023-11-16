@@ -31,6 +31,8 @@
             this.pizzaButton = new System.Windows.Forms.Button();
             this.drinkButton = new System.Windows.Forms.Button();
             this.creditLabel = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pizzaButton
@@ -69,12 +71,32 @@
             this.creditLabel.TabIndex = 2;
             this.creditLabel.Text = "© 2023 Trevy\'s Iconic Pizza";
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(79, 29);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(289, 96);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(394, 101);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MenuPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(180)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(751, 495);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.creditLabel);
             this.Controls.Add(this.drinkButton);
             this.Controls.Add(this.pizzaButton);
@@ -90,5 +112,7 @@
         private System.Windows.Forms.Button pizzaButton;
         private System.Windows.Forms.Button drinkButton;
         private System.Windows.Forms.Label creditLabel;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

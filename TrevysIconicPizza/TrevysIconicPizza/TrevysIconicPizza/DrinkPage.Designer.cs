@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DrinkPage));
             this.drinkPanel = new System.Windows.Forms.Panel();
             this.SoftdrinkPanel = new System.Windows.Forms.GroupBox();
+            this.softDrinkListBox = new System.Windows.Forms.ListBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.addSoftButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -54,10 +56,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.softDrinkListBox = new System.Windows.Forms.ListBox();
             this.drinkPanel.SuspendLayout();
             this.SoftdrinkPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -66,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.VegetarianGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // drinkPanel
@@ -92,10 +92,37 @@
             this.SoftdrinkPanel.TabStop = false;
             this.SoftdrinkPanel.Text = "Soft Drinks";
             // 
+            // softDrinkListBox
+            // 
+            this.softDrinkListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(202)))), ((int)(((byte)(68)))));
+            this.softDrinkListBox.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.softDrinkListBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(65)))), ((int)(((byte)(11)))));
+            this.softDrinkListBox.FormattingEnabled = true;
+            this.softDrinkListBox.ItemHeight = 21;
+            this.softDrinkListBox.Items.AddRange(new object[] {
+            "Coca Cola",
+            "Diet Coke",
+            "Ginger Ale",
+            "Sprite"});
+            this.softDrinkListBox.Location = new System.Drawing.Point(278, 55);
+            this.softDrinkListBox.Name = "softDrinkListBox";
+            this.softDrinkListBox.Size = new System.Drawing.Size(198, 88);
+            this.softDrinkListBox.TabIndex = 16;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(17, 55);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(229, 215);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 15;
+            this.pictureBox4.TabStop = false;
+            // 
             // addSoftButton
             // 
             this.addSoftButton.Font = new System.Drawing.Font("Arial", 11F);
-            this.addSoftButton.Location = new System.Drawing.Point(278, 224);
+            this.addSoftButton.Location = new System.Drawing.Point(278, 162);
             this.addSoftButton.Name = "addSoftButton";
             this.addSoftButton.Size = new System.Drawing.Size(129, 35);
             this.addSoftButton.TabIndex = 5;
@@ -366,36 +393,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(17, 55);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(229, 215);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 15;
-            this.pictureBox4.TabStop = false;
-            // 
-            // softDrinkListBox
-            // 
-            this.softDrinkListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(202)))), ((int)(((byte)(68)))));
-            this.softDrinkListBox.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.softDrinkListBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(65)))), ((int)(((byte)(11)))));
-            this.softDrinkListBox.FormattingEnabled = true;
-            this.softDrinkListBox.ItemHeight = 21;
-            this.softDrinkListBox.Items.AddRange(new object[] {
-            "Coca Cola",
-            "Diet Coke",
-            "Fanta Grape",
-            "Fanta Orange",
-            "Ginger Ale",
-            "Root Beer",
-            "Sprite"});
-            this.softDrinkListBox.Location = new System.Drawing.Point(278, 55);
-            this.softDrinkListBox.Name = "softDrinkListBox";
-            this.softDrinkListBox.Size = new System.Drawing.Size(198, 151);
-            this.softDrinkListBox.TabIndex = 16;
-            // 
             // DrinkPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -409,6 +406,7 @@
             this.Text = "Drink Menu";
             this.drinkPanel.ResumeLayout(false);
             this.SoftdrinkPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -421,7 +419,6 @@
             this.VegetarianGroupBox.ResumeLayout(false);
             this.VegetarianGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Drink.cs" />
     <Compile Include="DrinkPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +62,7 @@
     <Compile Include="MenuPage.Designer.cs">
       <DependentUpon>MenuPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pizza.cs" />
     <Compile Include="PizzaPage.cs">
       <SubType>Form</SubType>
     </Compile>
