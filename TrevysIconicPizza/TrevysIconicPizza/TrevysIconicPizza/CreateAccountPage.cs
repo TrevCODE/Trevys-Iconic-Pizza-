@@ -64,10 +64,18 @@ namespace TrevysIconicPizza
             return result;
         }
 
-        //private bool verifyUsername()
-        //{
-        //    bool result = true;
-        //}
+        private bool verifyUsername()
+        {
+            bool result = true;
+            //Username must contain a upper and lowercase letter, a digit, and must be of length 6
+            if(System.Text.RegularExpressions.Regex.IsMatch(usernameTextBox.Text, "^(?=.*[a-zA-Z])(?=.*\\d).{6,}$\r\n"))
+            {
+                invalidResult.Add($"Invalid username\n");
+                result = false;
+            }
+            return result;
+
+        }
         private bool verifyPassword()
         {
             bool result = true;
@@ -84,12 +92,12 @@ namespace TrevysIconicPizza
         private bool verifyCard()
         {
             bool result = true;
-            if (!System.Text.RegularExpressions.Regex.IsMatch(cardTextBox.Text, "/^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\\d{3})\\d{11})$/"))
+            if (!System.Text.RegularExpressions.Regex.IsMatch(cardTextBox.Text, @"^(?! )[\d ]{13,19}$"))
             {
                 invalidResult.Add("Invalid Card input\n");
                 result = false;
             }
-            return result; 
+            return result;
         }
 
         private void createAcountButton_Click(object sender, EventArgs e)
@@ -97,10 +105,12 @@ namespace TrevysIconicPizza
             string text = "";
 
             verifyCard();
+            verifyUsername();
             verifyFirstName();
             verifyLastName();
             verifyPassword();
 
+            // If invalidResult is not empty then add all strings to text variable so all errors can be displayed at once
             if (invalidResult.Count != 0)
             {
                 foreach (var result in invalidResult)
@@ -109,11 +119,19 @@ namespace TrevysIconicPizza
                 }
 
                 MessageBox.Show(text, "Validation Errors", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
                 // Clear text after loop
                 text = "";
 
                 // Clear the list of invalid results after displaying them
                 invalidResult.Clear();
+            }
+            
+            // If all return true create new Customer object
+            if(verifyCard() == true && verifyUsername() == true && verifyFirstName() == true && verifyLastName() == true && verifyPassword() == true) 
+            {
+                Customer person = new Customer(firstNameTextBox.Text, lastNameTextBox.Text, passwordTextBox.Text, cardTextBox.Text, usernameTextBox.Text);
+                MessageBox.Show("Welcome " + firstNameTextBox.Text + ", you just created an account", "Validation Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

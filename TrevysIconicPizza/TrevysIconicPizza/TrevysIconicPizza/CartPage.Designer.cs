@@ -30,22 +30,68 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CartPage));
             this.cartPanel = new System.Windows.Forms.Panel();
-            this.copyrightLabel = new System.Windows.Forms.Label();
-            this.cartListBox = new System.Windows.Forms.ListBox();
+            this.yourItemsLabel = new System.Windows.Forms.Label();
+            this.editButton = new System.Windows.Forms.Button();
             this.removeButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cartListBox = new System.Windows.Forms.ListBox();
+            this.copyrightLabel = new System.Windows.Forms.Label();
             this.cartPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // cartPanel
             // 
-            this.cartPanel.Controls.Add(this.button1);
+            this.cartPanel.Controls.Add(this.yourItemsLabel);
+            this.cartPanel.Controls.Add(this.editButton);
             this.cartPanel.Controls.Add(this.removeButton);
             this.cartPanel.Controls.Add(this.cartListBox);
             this.cartPanel.Location = new System.Drawing.Point(28, 23);
             this.cartPanel.Name = "cartPanel";
-            this.cartPanel.Size = new System.Drawing.Size(503, 315);
+            this.cartPanel.Size = new System.Drawing.Size(503, 344);
             this.cartPanel.TabIndex = 0;
+            // 
+            // yourItemsLabel
+            // 
+            this.yourItemsLabel.AutoSize = true;
+            this.yourItemsLabel.Font = new System.Drawing.Font("Britannic Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yourItemsLabel.ForeColor = System.Drawing.Color.White;
+            this.yourItemsLabel.Location = new System.Drawing.Point(350, 4);
+            this.yourItemsLabel.Name = "yourItemsLabel";
+            this.yourItemsLabel.Size = new System.Drawing.Size(142, 60);
+            this.yourItemsLabel.TabIndex = 3;
+            this.yourItemsLabel.Text = "Your Items\r\n\r\n";
+            this.yourItemsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // editButton
+            // 
+            this.editButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
+            this.editButton.ForeColor = System.Drawing.Color.White;
+            this.editButton.Location = new System.Drawing.Point(355, 227);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(145, 50);
+            this.editButton.TabIndex = 2;
+            this.editButton.Text = "Edit";
+            this.editButton.UseVisualStyleBackColor = false;
+            // 
+            // removeButton
+            // 
+            this.removeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
+            this.removeButton.ForeColor = System.Drawing.Color.White;
+            this.removeButton.Location = new System.Drawing.Point(355, 283);
+            this.removeButton.Name = "removeButton";
+            this.removeButton.Size = new System.Drawing.Size(145, 50);
+            this.removeButton.TabIndex = 1;
+            this.removeButton.Text = "Remove";
+            this.removeButton.UseVisualStyleBackColor = false;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
+            // 
+            // cartListBox
+            // 
+            this.cartListBox.FormattingEnabled = true;
+            this.cartListBox.Location = new System.Drawing.Point(4, 4);
+            this.cartListBox.Name = "cartListBox";
+            this.cartListBox.ScrollAlwaysVisible = true;
+            this.cartListBox.Size = new System.Drawing.Size(317, 329);
+            this.cartListBox.TabIndex = 0;
             // 
             // copyrightLabel
             // 
@@ -56,37 +102,6 @@
             this.copyrightLabel.TabIndex = 8;
             this.copyrightLabel.Text = "© 2023 Trevy\'s Iconic Pizza";
             this.copyrightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cartListBox
-            // 
-            this.cartListBox.FormattingEnabled = true;
-            this.cartListBox.Location = new System.Drawing.Point(4, 4);
-            this.cartListBox.Name = "cartListBox";
-            this.cartListBox.ScrollAlwaysVisible = true;
-            this.cartListBox.Size = new System.Drawing.Size(317, 303);
-            this.cartListBox.TabIndex = 0;
-            // 
-            // removeButton
-            // 
-            this.removeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
-            this.removeButton.ForeColor = System.Drawing.Color.White;
-            this.removeButton.Location = new System.Drawing.Point(355, 257);
-            this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(145, 50);
-            this.removeButton.TabIndex = 1;
-            this.removeButton.Text = "Remove";
-            this.removeButton.UseVisualStyleBackColor = false;
-            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(389, 149);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CartPage
             // 
@@ -100,6 +115,7 @@
             this.Name = "CartPage";
             this.Text = "CartPage";
             this.cartPanel.ResumeLayout(false);
+            this.cartPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -110,6 +126,7 @@
         private System.Windows.Forms.Label copyrightLabel;
         private System.Windows.Forms.Button removeButton;
         private System.Windows.Forms.ListBox cartListBox;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button editButton;
+        private System.Windows.Forms.Label yourItemsLabel;
     }
 }
