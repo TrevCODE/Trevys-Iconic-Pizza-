@@ -19,6 +19,20 @@ namespace TrevysIconicPizza
             //this.name = Name;
             this.type = type;
             this.size = size;
+
+            if ((type.Equals("Original", StringComparison.OrdinalIgnoreCase) ||
+                (type.Equals("Vegetarian", StringComparison.OrdinalIgnoreCase) ||
+                (type.Equals("Pepperoni", StringComparison.OrdinalIgnoreCase)) ||
+                (type.Equals("Margherita", StringComparison.OrdinalIgnoreCase))))) 
+            {
+                this.price = calculatePriceForReadyPizza();
+            }
+            else
+            {
+                this.price = calculatePriceForCustomPizza();
+            }
+
+            this.size = Size;
             this.ingredients = ingredients ?? new List<string>();
         }
 

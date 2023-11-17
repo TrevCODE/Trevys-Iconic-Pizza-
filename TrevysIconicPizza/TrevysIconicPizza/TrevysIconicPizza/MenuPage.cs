@@ -52,14 +52,6 @@ namespace TrevysIconicPizza
             drinkButton.Enabled = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            List<String> test = new List<string>();
-            test.Add("burger");
-            Pizza p1 = new Pizza("Original", 's', test);
-            decimal pizzaPrice = p1.calculatePriceForReadyPizza(); // Access the Price property to trigger the calculation
-            richTextBox1.Text = pizzaPrice.ToString();
-        }
+       
     }
 }
