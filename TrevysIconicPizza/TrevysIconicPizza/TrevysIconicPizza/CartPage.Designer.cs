@@ -35,11 +35,15 @@
             this.removeButton = new System.Windows.Forms.Button();
             this.cartListBox = new System.Windows.Forms.ListBox();
             this.copyrightLabel = new System.Windows.Forms.Label();
+            this.emptyLabel = new System.Windows.Forms.Label();
+            this.addButton = new System.Windows.Forms.Button();
             this.cartPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // cartPanel
             // 
+            this.cartPanel.Controls.Add(this.addButton);
+            this.cartPanel.Controls.Add(this.emptyLabel);
             this.cartPanel.Controls.Add(this.yourItemsLabel);
             this.cartPanel.Controls.Add(this.editButton);
             this.cartPanel.Controls.Add(this.removeButton);
@@ -103,6 +107,28 @@
             this.copyrightLabel.Text = "© 2023 Trevy\'s Iconic Pizza";
             this.copyrightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // emptyLabel
+            // 
+            this.emptyLabel.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emptyLabel.Location = new System.Drawing.Point(367, 41);
+            this.emptyLabel.Name = "emptyLabel";
+            this.emptyLabel.Size = new System.Drawing.Size(114, 116);
+            this.emptyLabel.TabIndex = 4;
+            this.emptyLabel.Text = "It Seems That Your Cart Is Empty... Click Add";
+            this.emptyLabel.Visible = false;
+            // 
+            // addButton
+            // 
+            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
+            this.addButton.ForeColor = System.Drawing.Color.White;
+            this.addButton.Location = new System.Drawing.Point(355, 171);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(145, 50);
+            this.addButton.TabIndex = 5;
+            this.addButton.Text = "Add";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
             // CartPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,5 +154,7 @@
         private System.Windows.Forms.ListBox cartListBox;
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.Label yourItemsLabel;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Label emptyLabel;
     }
 }

@@ -18,6 +18,7 @@ namespace TrevysIconicPizza
         public CartPage()
         {
             InitializeComponent();
+            checkEmpty();
         }
 
         private void removeButton_Click(object sender, EventArgs e)
@@ -26,8 +27,35 @@ namespace TrevysIconicPizza
             {
                 cartListBox.Items.RemoveAt(cartListBox.SelectedIndex);
             }
+            checkEmpty();
         }
 
+        //Checks if the listBox is empty
+        public bool checkEmpty()
+        {
+            bool result = false;
 
+            // If cart is empty display empty cart message
+            if (cartListBox.Items.Count == 0)
+            {
+                emptyLabel.Show();
+                editButton.Enabled = false;
+                removeButton.Enabled = false;
+                result = true;
+            } else
+            {
+                emptyLabel.Hide();
+                editButton.Enabled = true;
+                removeButton.Enabled = true;
+            }
+            return result;
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            //This is for testing
+            cartListBox.Items.Add("Pizza");
+            checkEmpty();
+        }
     }
 }

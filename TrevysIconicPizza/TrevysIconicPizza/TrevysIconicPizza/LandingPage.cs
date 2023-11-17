@@ -12,9 +12,6 @@ namespace TrevysIconicPizza
 {
     public partial class LandingPage : Form
     {
-        private CartPage cartPage;
-        private  LoginPage loginPage;
-        private CreateAccountPage createAccountPage;
         public LandingPage()
         {
             InitializeComponent();

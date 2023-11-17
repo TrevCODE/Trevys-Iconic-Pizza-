@@ -85,32 +85,38 @@ namespace TrevysIconicPizza
             // 
             // UserNameLabel
             // 
+            this.UserNameLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(202)))), ((int)(((byte)(68)))));
             this.UserNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
             this.UserNameLabel.Location = new System.Drawing.Point(102, 116);
             this.UserNameLabel.Name = "UserNameLabel";
-            this.UserNameLabel.Size = new System.Drawing.Size(100, 23);
+            this.UserNameLabel.Size = new System.Drawing.Size(82, 19);
             this.UserNameLabel.TabIndex = 4;
             this.UserNameLabel.Text = "Username";
             // 
             // PasswordLabel
             // 
+            this.PasswordLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(202)))), ((int)(((byte)(68)))));
             this.PasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
             this.PasswordLabel.Location = new System.Drawing.Point(102, 190);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(100, 23);
+            this.PasswordLabel.Size = new System.Drawing.Size(69, 19);
             this.PasswordLabel.TabIndex = 5;
             this.PasswordLabel.Text = "Password";
             // 
             // ShowPasswordCheckBox
             // 
             this.ShowPasswordCheckBox.AutoSize = true;
+            this.ShowPasswordCheckBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(202)))), ((int)(((byte)(68)))));
             this.ShowPasswordCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowPasswordCheckBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
             this.ShowPasswordCheckBox.Location = new System.Drawing.Point(420, 191);
             this.ShowPasswordCheckBox.Name = "ShowPasswordCheckBox";
             this.ShowPasswordCheckBox.Size = new System.Drawing.Size(115, 17);
             this.ShowPasswordCheckBox.TabIndex = 6;
             this.ShowPasswordCheckBox.Text = "Show Password";
-            this.ShowPasswordCheckBox.UseVisualStyleBackColor = true;
+            this.ShowPasswordCheckBox.UseVisualStyleBackColor = false;
             this.ShowPasswordCheckBox.CheckedChanged += new System.EventHandler(this.ShowPasswordCheckBox_CheckedChanged);
             // 
             // copyrightLabel
@@ -131,7 +137,7 @@ namespace TrevysIconicPizza
             this.loginPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.loginPanel.Controls.Add(this.LoginButton);
             this.loginPanel.Location = new System.Drawing.Point(23, 18);
-            this.loginPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loginPanel.Margin = new System.Windows.Forms.Padding(2);
             this.loginPanel.Name = "loginPanel";
             this.loginPanel.Size = new System.Drawing.Size(520, 351);
             this.loginPanel.TabIndex = 8;
@@ -155,7 +161,6 @@ namespace TrevysIconicPizza
             this.MaximumSize = new System.Drawing.Size(579, 441);
             this.Name = "LoginPage";
             this.Text = "LoginPage";
-            this.Load += new System.EventHandler(this.LoginPage_Load);
             this.loginPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
