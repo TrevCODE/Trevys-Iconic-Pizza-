@@ -25,10 +25,16 @@ namespace TrevysIconicPizza
         {
             if (cartListBox.SelectedIndex != -1)
             {
-                cartListBox.Items.RemoveAt(cartListBox.SelectedIndex);
+                DialogResult result = MessageBox.Show("Are you sure that you want to remove the selected item?", "Remove Item", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    cartListBox.Items.RemoveAt(cartListBox.SelectedIndex);
+                    checkEmpty();
+                }
             }
-            checkEmpty();
         }
+
 
         //Checks if the listBox is empty
         public bool checkEmpty()
