@@ -33,6 +33,7 @@
             this.createAccountButton = new System.Windows.Forms.Button();
             this.continueAsGuestButton = new System.Windows.Forms.Button();
             this.copyrightLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,11 +89,22 @@
             this.copyrightLabel.Text = "© 2023 Trevy\'s Iconic Pizza";
             this.copyrightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(455, 240);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "test";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // LandingPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(563, 402);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.copyrightLabel);
             this.Controls.Add(this.continueAsGuestButton);
             this.Controls.Add(this.createAccountButton);
@@ -112,6 +124,7 @@
         private System.Windows.Forms.Button createAccountButton;
         private System.Windows.Forms.Button continueAsGuestButton;
         private System.Windows.Forms.Label copyrightLabel;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -28,10 +28,7 @@ namespace TrevysIconicPizza
             }
         }
 
-        private void LoginPage_Load(object sender, EventArgs e)
-        {
 
-        }
 
     }
 }
