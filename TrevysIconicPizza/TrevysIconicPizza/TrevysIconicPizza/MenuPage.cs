@@ -52,6 +52,5 @@ namespace TrevysIconicPizza
             drinkButton.Enabled = false;
         }
 
-       
     }
 }
