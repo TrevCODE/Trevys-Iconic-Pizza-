@@ -49,14 +49,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Drink.cs" />
     <Compile Include="DrinkPage.cs">
+=======
+    <Compile Include="CartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartPage.Designer.cs">
+      <DependentUpon>CartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccountPage.cs">
+>>>>>>> TrevBranch2
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DrinkPage.Designer.cs">
       <DependentUpon>DrinkPage.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="MenuPage.cs">
+=======
+    <Compile Include="Customer.cs" />
+    <Compile Include="LandingPage.cs">
+>>>>>>> TrevBranch2
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPage.Designer.cs">
@@ -71,8 +86,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="DrinkPage.resx">
       <DependentUpon>DrinkPage.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="CartPage.resx">
+      <DependentUpon>CartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccountPage.resx">
+      <DependentUpon>CreateAccountPage.cs</DependentUpon>
+>>>>>>> TrevBranch2
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPage.resx">
       <DependentUpon>MenuPage.cs</DependentUpon>
