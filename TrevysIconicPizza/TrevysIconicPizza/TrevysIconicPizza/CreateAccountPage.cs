@@ -48,6 +48,7 @@ namespace TrevysIconicPizza
             if (System.Text.RegularExpressions.Regex.IsMatch(firstNameTextBox.Text, "[^a-zA-Z]"))
             {
                 invalidResult.Add("First name must contain only letters.\n");
+                firstNameTextBox.Clear();
                 result = false;
             }
             return result;
@@ -59,6 +60,7 @@ namespace TrevysIconicPizza
             if (System.Text.RegularExpressions.Regex.IsMatch(lastNameTextBox.Text, "[^a-zA-Z]"))
             {
                 invalidResult.Add("Last name must contain only letters.\n");
+                lastNameTextBox.Clear();
                 result = false;
             }
             return result;
@@ -71,6 +73,7 @@ namespace TrevysIconicPizza
             if(System.Text.RegularExpressions.Regex.IsMatch(usernameTextBox.Text, "^(?=.*[a-zA-Z])(?=.*\\d).{6,}$\r\n"))
             {
                 invalidResult.Add($"Invalid username\n");
+                usernameTextBox.Clear();
                 result = false;
             }
             return result;
@@ -81,11 +84,14 @@ namespace TrevysIconicPizza
             bool result = true;
             if (!passwordTextBox.Text.Equals(reEnterTextBox.Text)) {
                 invalidResult.Add("Password does not match\n");
+                reEnterTextBox.Clear();
                 result = false;
             }
             if(passwordTextBox.Text.Length < 8)
             {
                 invalidResult.Add("Password must be eight characters or longer");
+                passwordTextBox.Clear();
+                result = false;
             }
             return result;
         }
@@ -95,13 +101,17 @@ namespace TrevysIconicPizza
             if (!System.Text.RegularExpressions.Regex.IsMatch(cardTextBox.Text, @"^(?! )[\d ]{13,19}$"))
             {
                 invalidResult.Add("Invalid Card input\n");
+                cardTextBox.Clear();
                 result = false;
             }
+
             return result;
         }
-
         private void createAcountButton_Click(object sender, EventArgs e)
         {
+            // Clear the list of invalid results after displaying them
+            invalidResult.Clear();
+            
             string text = "";
 
             verifyCard();
@@ -123,15 +133,18 @@ namespace TrevysIconicPizza
                 // Clear text after loop
                 text = "";
 
-                // Clear the list of invalid results after displaying them
-                invalidResult.Clear();
             }
             
-            // If all return true create new Customer object
+            // If all return true create new Customer object and close the form
             if(verifyCard() == true && verifyUsername() == true && verifyFirstName() == true && verifyLastName() == true && verifyPassword() == true) 
             {
-                Customer person = new Customer(firstNameTextBox.Text, lastNameTextBox.Text, passwordTextBox.Text, cardTextBox.Text, usernameTextBox.Text);
-                MessageBox.Show("Welcome " + firstNameTextBox.Text + ", you just created an account", "Validation Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DialogResult  result = MessageBox.Show("Are you sure all information is correct?", "Verification", MessageBoxButtons.OKCancel);
+                if (result == DialogResult.OK)
+                {
+                    Customer person = new Customer(firstNameTextBox.Text, lastNameTextBox.Text, passwordTextBox.Text, cardTextBox.Text, usernameTextBox.Text);
+                    MessageBox.Show("Welcome " + firstNameTextBox.Text + ", you just created an account", "Validation Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
             }
         }
 
