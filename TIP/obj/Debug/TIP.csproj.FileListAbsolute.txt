@@ -1,0 +1,11 @@
+C:\Users\fruha\source\repos\TIP\bin\Debug\TIP.exe.config
+C:\Users\fruha\source\repos\TIP\bin\Debug\TIP.exe
+C:\Users\fruha\source\repos\TIP\bin\Debug\TIP.pdb
+C:\Users\fruha\source\repos\TIP\obj\Debug\TIP.csproj.AssemblyReference.cache
+C:\Users\fruha\source\repos\TIP\obj\Debug\TIP.CheckoutPageForm.resources
+C:\Users\fruha\source\repos\TIP\obj\Debug\TIP.LogoutPageForm.resources
+C:\Users\fruha\source\repos\TIP\obj\Debug\TIP.Properties.Resources.resources
+C:\Users\fruha\source\repos\TIP\obj\Debug\TIP.csproj.GenerateResource.cache
+C:\Users\fruha\source\repos\TIP\obj\Debug\TIP.csproj.CoreCompileInputs.cache
+C:\Users\fruha\source\repos\TIP\obj\Debug\TIP.exe
+C:\Users\fruha\source\repos\TIP\obj\Debug\TIP.pdb
