@@ -18,7 +18,7 @@ namespace TrevysIconicPizza
             InitializeComponent();
 
            pizzaPanel.AutoScrollMinSize = new Size(0, 880);
-            this.Size = new Size(Width, Height + 10);
+           this.Size = new Size(Width, Height + 10);
         }
 
         private void crustListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -75,8 +75,32 @@ namespace TrevysIconicPizza
             }
         
         }
+        //vege vegetarian
+        private void addToCartButton_Click(object sender, EventArgs e)
+        {
+            char size = VegListBox.Text.ToCharArray()[0];
+            Pizza vegetarian = new Pizza("vegetarian", size, null);
 
-        
+        }
+
+        //ori
+        private void addToCartButton2_Click(object sender, EventArgs e)
+        {
+            char size = oriListBox.Text.ToCharArray()[0];
+            Pizza original = new Pizza("original", size, null);
+        }
+
+        private void addToCartButton3_Click(object sender, EventArgs e)
+        {
+            char size = pepListBox.Text.ToCharArray()[0];
+            Pizza pepperoni = new Pizza("pepperoni", size, null);
+        }
+
+        private void addToCartButton4_Click(object sender, EventArgs e)
+        {
+            char size = margListBox.Text.ToCharArray()[0];
+            Pizza margherita = new Pizza("margherita", size, null);
+        }
     }
 
 
