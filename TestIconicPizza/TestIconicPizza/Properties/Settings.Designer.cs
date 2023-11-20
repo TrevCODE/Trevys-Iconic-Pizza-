@@ -8,7 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+<<<<<<<< HEAD:TestIconicPizza/TestIconicPizza/Properties/Settings.Designer.cs
 namespace TestIconicPizza.Properties
+========
+namespace TrevysIconicPizza.Properties
+>>>>>>>> main:CevsVersion_TrevysIconicPizza/TrevysIconicPizza/TrevysIconicPizza/Properties/Settings.Designer.cs
 {
 
 

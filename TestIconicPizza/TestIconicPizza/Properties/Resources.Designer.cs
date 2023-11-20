@@ -8,7 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+<<<<<<<< HEAD:TestIconicPizza/TestIconicPizza/Properties/Resources.Designer.cs
 namespace TestIconicPizza.Properties
+========
+namespace TrevysIconicPizza.Properties
+>>>>>>>> main:CevsVersion_TrevysIconicPizza/TrevysIconicPizza/TrevysIconicPizza/Properties/Resources.Designer.cs
 {
 
 
@@ -44,7 +48,11 @@ namespace TestIconicPizza.Properties
             {
                 if ((resourceMan == null))
                 {
+<<<<<<<< HEAD:TestIconicPizza/TestIconicPizza/Properties/Resources.Designer.cs
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TestIconicPizza.Properties.Resources", typeof(Resources).Assembly);
+========
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TrevysIconicPizza.Properties.Resources", typeof(Resources).Assembly);
+>>>>>>>> main:CevsVersion_TrevysIconicPizza/TrevysIconicPizza/TrevysIconicPizza/Properties/Resources.Designer.cs
                     resourceMan = temp;
                 }
                 return resourceMan;

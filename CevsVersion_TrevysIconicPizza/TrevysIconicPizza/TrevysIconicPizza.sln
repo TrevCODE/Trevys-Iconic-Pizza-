@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+<<<<<<<< HEAD:TestIconicPizza/TestIconicPizza.sln
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestIconicPizza", "TestIconicPizza\TestIconicPizza.csproj", "{CBED3729-E903-4731-AF8F-731D41240C36}"
+========
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrevysIconicPizza", "TrevysIconicPizza\TrevysIconicPizza.csproj", "{3E59E6DC-F510-494F-A098-A7F00C02E870}"
+>>>>>>>> main:CevsVersion_TrevysIconicPizza/TrevysIconicPizza/TrevysIconicPizza.sln
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<<< HEAD:TestIconicPizza/TestIconicPizza.sln
+		{CBED3729-E903-4731-AF8F-731D41240C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBED3729-E903-4731-AF8F-731D41240C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBED3729-E903-4731-AF8F-731D41240C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBED3729-E903-4731-AF8F-731D41240C36}.Release|Any CPU.Build.0 = Release|Any CPU
+========
+		{3E59E6DC-F510-494F-A098-A7F00C02E870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E59E6DC-F510-494F-A098-A7F00C02E870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E59E6DC-F510-494F-A098-A7F00C02E870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E59E6DC-F510-494F-A098-A7F00C02E870}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>>> main:CevsVersion_TrevysIconicPizza/TrevysIconicPizza/TrevysIconicPizza.sln
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+<<<<<<<< HEAD:TestIconicPizza/TestIconicPizza.sln
+		SolutionGuid = {DF423229-5DB3-4DD2-A0E7-57795A96BDCA}
+========
+		SolutionGuid = {E75C413C-4202-495F-A4B2-0A7C1E3DB0F8}
+>>>>>>>> main:CevsVersion_TrevysIconicPizza/TrevysIconicPizza/TrevysIconicPizza.sln
+	EndGlobalSection
+EndGlobal
